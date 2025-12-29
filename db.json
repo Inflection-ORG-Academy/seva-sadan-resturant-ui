@@ -1,0 +1,160 @@
+{
+  "restaurant": {
+    "id": 1,
+    "name": "Pizza Drying",
+    "tagline": "Hot • Cheesy • More Than Pizza",
+    "contact": {
+      "phone": "+91-9XXXXXXXXX",
+      "email": "pizzadrying@gmail.com",
+      "address": "Your City, India"
+    }
+  },
+
+  "categories": [
+    { "id": 1, "name": "Veg Pizza" },
+    { "id": 2, "name": "Special Pizza" },
+    { "id": 3, "name": "Burger" },
+    { "id": 4, "name": "Wraps & Rolls" },
+    { "id": 5, "name": "Fries & Sides" },
+    { "id": 6, "name": "Snacks" },
+    { "id": 7, "name": "Pasta" },
+    { "id": 8, "name": "Beverages" },
+    { "id": 9, "name": "Desserts" }
+  ],
+
+  "menu": [
+    {
+      "id": 101,
+      "name": "Classic Margherita",
+      "categoryId": 1,
+      "price": 199,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 102,
+      "name": "Paneer Tikka Pizza",
+      "categoryId": 1,
+      "price": 299,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 103,
+      "name": "Cheese Burst Veg Pizza",
+      "categoryId": 1,
+      "price": 349,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 201,
+      "name": "Paneer Overload Pizza",
+      "categoryId": 2,
+      "price": 379,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 301,
+      "name": "Veg Cheese Burger",
+      "categoryId": 3,
+      "price": 129,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 401,
+      "name": "Paneer Tikka Roll",
+      "categoryId": 4,
+      "price": 149,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 501,
+      "name": "Peri Peri Fries",
+      "categoryId": 5,
+      "price": 129,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 601,
+      "name": "Veg Fried Momos",
+      "categoryId": 6,
+      "price": 149,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 701,
+      "name": "White Sauce Pasta",
+      "categoryId": 7,
+      "price": 199,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 801,
+      "name": "Cold Coffee",
+      "categoryId": 8,
+      "price": 99,
+      "veg": true,
+      "available": true
+    },
+    {
+      "id": 901,
+      "name": "Choco Lava Cake",
+      "categoryId": 9,
+      "price": 129,
+      "veg": true,
+      "available": true
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Kumar",
+      "phone": "9XXXXXXXXX",
+      "email": "rahul@gmail.com",
+      "role": "customer"
+    }
+  ],
+
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "menuId": 102,
+          "name": "Paneer Tikka Pizza",
+          "quantity": 1,
+          "price": 299
+        },
+        {
+          "menuId": 501,
+          "name": "Peri Peri Fries",
+          "quantity": 1,
+          "price": 129
+        }
+      ],
+      "totalAmount": 428,
+      "status": "pending",
+      "paymentMode": "COD",
+      "createdAt": "2025-01-01"
+    }
+  ],
+
+  "enquiries": [
+    {
+      "id": 1,
+      "name": "Amit",
+      "phone": "8XXXXXXXXX",
+      "message": "Do you have birthday party combos?",
+      "createdAt": "2025-01-01"
+    }
+  ]
+}
