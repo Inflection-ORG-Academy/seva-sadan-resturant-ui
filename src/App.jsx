@@ -6,11 +6,13 @@ import ContactUsPage from "./pages/ContactUs";
 import Navbar from "./components/Navbar";
 import NotFoundPage from "./NotFound";
 import OurStoryPage from "./pages/OurStory";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Hero />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menus" element={<ProductsPage />} />
