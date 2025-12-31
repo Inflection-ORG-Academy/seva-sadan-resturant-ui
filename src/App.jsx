@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import NotFoundPage from "./NotFound";
 import OurStoryPage from "./pages/OurStory";
 import Hero from "./components/Hero";
+import CategoryDetails from "./pages/CategoryDetails";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/menus" element={<ProductsPage />} />
         <Route path="/our_story" element={<OurStoryPage />} />
         <Route path="/contact_us" element={<ContactUsPage />} />
+        <Route path="/categories/:name" element={<CategoryDetails />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </>
