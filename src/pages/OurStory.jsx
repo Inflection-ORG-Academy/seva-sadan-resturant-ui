@@ -1,7 +1,12 @@
 import React from "react";
+import Team from "../components/Team";
 
 const OurStoryPage = () => {
-  return <div>OurStoryPage</div>;
+  return (
+    <div>
+      <Team />
+    </div>
+  );
 };
 
 export default OurStoryPage;
