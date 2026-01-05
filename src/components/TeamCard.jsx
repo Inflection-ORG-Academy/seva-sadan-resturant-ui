@@ -2,7 +2,12 @@ import React from "react";
 
 const TeamCard = (props) => {
   return (
-    <figure className="flex justify-center text-center border border-neutral-100 shadow p-2 rounded-2xl bg-red-100">
+    <figure
+      className="flex justify-center text-center border border-neutral-100 shadow p-2 rounded-2xl bg-red-100 hover:cursor-pointer"
+      onClick={() => {
+        props.onShowTeamMemberDetails(props.index);
+      }}
+    >
       <section>
         <img
           src={props.profilePic}

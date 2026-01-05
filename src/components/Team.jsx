@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import TeamCard from "./TeamCard";
+import TeamDetailsPopup from "./TeamDetailsPopup";
 
 const Team = () => {
-  const team = [
+  const [team, setTeam] = useState([
     {
       name: "Jackquline",
       role: "chef",
@@ -33,7 +34,14 @@ const Team = () => {
       profilePic:
         "https://st2.depositphotos.com/1029150/9318/i/950/depositphotos_93182900-stock-photo-indian-woman-chef.jpg",
     },
-  ];
+  ]);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const showTeamMemberDetails = (index) => {
+    setCurrentIndex(index);
+    setIsPopupOpen(true);
+  };
 
   return (
     <div>
@@ -46,9 +54,19 @@ const Team = () => {
             name={team.name}
             role={team.role}
             profilePic={team.profilePic}
+            onShowTeamMemberDetails={showTeamMemberDetails}
+            index={index}
           />
         ))}
       </section>
+
+      {/* Team Details Popup */}
+
+      <TeamDetailsPopup
+        team={team[currentIndex]}
+        isPopupOpen={isPopupOpen}
+        onClosePopup={() => setIsPopupOpen(false)}
+      />
     </div>
   );
 };

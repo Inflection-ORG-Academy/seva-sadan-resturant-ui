@@ -3,7 +3,7 @@ import Team from "../components/Team";
 
 const OurStoryPage = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Team />
     </div>
   );
