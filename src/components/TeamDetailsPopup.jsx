@@ -1,17 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
 const TeamDetailsPopup = ({ team = {}, isPopupOpen, onClosePopup }) => {
+  useEffect(() => {
+    if (isPopupOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isPopupOpen]);
+
   return (
     <section
+      id="popup"
       className={`${
-        isPopupOpen ? "z-30" : "-z-30"
-      } fixed inset-0 bg-black/70 flex justify-center items-center p-5 duration-1000`}
+        isPopupOpen ? "z-30" : "-z-30 delay-500"
+      } fixed inset-0 bg-black/70 flex justify-center items-center p-5 duration-500`}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClosePopup();
+        }
+      }}
     >
       <figure
         className={`${
           isPopupOpen ? "scale-100" : "scale-0"
         } max-w-4xl bg-white h-2/3 flex gap-3 rounded-xl delay-200 duration-500 transition-all`}
+        onClick={(e) => e.stopPropagation()}
       >
         <img
           src={team.profilePic}
@@ -32,6 +51,7 @@ const TeamDetailsPopup = ({ team = {}, isPopupOpen, onClosePopup }) => {
             Wash care: Hand wash separately in cold water and dry in shade.
           </p>
           <button
+            id="closePopupBtn"
             onClick={onClosePopup}
             className="absolute top-5 right-5 text-xl hover:cursor-pointer"
           >
