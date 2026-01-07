@@ -3,14 +3,20 @@ import { X } from "lucide-react";
 
 const TeamDetailsPopup = ({ team = {}, isPopupOpen, onClosePopup }) => {
   useEffect(() => {
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
     if (isPopupOpen) {
       document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = `${0}px`;
     }
 
     return () => {
       document.body.style.overflow = "";
+      document.body.style.paddingRight = `${0}px`;
     };
   }, [isPopupOpen]);
 
