@@ -52,7 +52,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <section className="max-w-7xl container mx-auto px-5">
+      <section className="max-w-7xl container mx-auto px-5 py-5">
         <h3 className="text-xl font-semibold py-2">Categories</h3>
         <CategorySlider categories={categories} />
       </section>
