@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import TeamCard from "./TeamCard";
 import TeamDetailsPopup from "./TeamDetailsPopup";
+import { useInView } from "../hooks/UseInView";
+import AnimatedLayout from "./AnimatedLayout";
 
 const Team = () => {
+  const { ref, isVisible } = useInView();
+
   const [team, setTeam] = useState([
     {
       name: "Jackquline",
@@ -45,23 +49,37 @@ const Team = () => {
 
   return (
     <div>
-      <h1 className="text-center py-5 text-3xl font-semibold">Meet our Team</h1>
-
-      <section className="flex justify-center gap-3 flex-wrap w-full">
-        {team.map((team, index) => (
-          <TeamCard
-            key={index}
-            name={team.name}
-            role={team.role}
-            profilePic={team.profilePic}
-            onShowTeamMemberDetails={showTeamMemberDetails}
-            index={index}
-          />
-        ))}
-      </section>
-
+      {/* <div
+        ref={ref}
+        className={`transition-all duration-800 ease-out
+ ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+      > */}
+      <AnimatedLayout>
+        <section className="mt-24 text-center max-w-3xl mx-auto py-5">
+          <h2 className="text-3xl font-semibold mb-6">
+            More Than a Restaurant
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            We are a place where families gather, friends celebrate, and
+            memories are created over delicious food. Thank you for being a part
+            of our story — we can’t wait to serve you.
+          </p>
+        </section>
+        <section className="flex justify-center gap-3 flex-wrap w-full">
+          {team.map((team, index) => (
+            <TeamCard
+              key={index}
+              name={team.name}
+              role={team.role}
+              profilePic={team.profilePic}
+              onShowTeamMemberDetails={showTeamMemberDetails}
+              index={index}
+            />
+          ))}
+        </section>
+      </AnimatedLayout>
+      {/* </div> */}
       {/* Custom Popup */}
-
       <TeamDetailsPopup
         team={team[currentIndex]}
         isPopupOpen={isPopupOpen}
