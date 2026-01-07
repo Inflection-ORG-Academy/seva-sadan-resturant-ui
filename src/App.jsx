@@ -8,6 +8,7 @@ import NotFoundPage from "./NotFound";
 import OurStoryPage from "./pages/OurStory";
 import Hero from "./components/Hero";
 import CategoryDetails from "./pages/CategoryDetails";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/categories/:name" element={<CategoryDetails />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 };
