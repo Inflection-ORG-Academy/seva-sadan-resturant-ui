@@ -22,96 +22,47 @@
     { "id": 9, "name": "Desserts" }
   ],
 
+
   "menu": [
-    {
-      "id": 101,
-      "name": "Classic Margherita",
-      "categoryId": 1,
-      "price": 199,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 102,
-      "name": "Paneer Tikka Pizza",
-      "categoryId": 1,
-      "price": 299,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 103,
-      "name": "Cheese Burst Veg Pizza",
-      "categoryId": 1,
-      "price": 349,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 201,
-      "name": "Paneer Overload Pizza",
-      "categoryId": 2,
-      "price": 379,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 301,
-      "name": "Veg Cheese Burger",
-      "categoryId": 3,
-      "price": 129,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 401,
-      "name": "Paneer Tikka Roll",
-      "categoryId": 4,
-      "price": 149,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 501,
-      "name": "Peri Peri Fries",
-      "categoryId": 5,
-      "price": 129,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 601,
-      "name": "Veg Fried Momos",
-      "categoryId": 6,
-      "price": 149,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 701,
-      "name": "White Sauce Pasta",
-      "categoryId": 7,
-      "price": 199,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 801,
-      "name": "Cold Coffee",
-      "categoryId": 8,
-      "price": 99,
-      "veg": true,
-      "available": true
-    },
-    {
-      "id": 901,
-      "name": "Choco Lava Cake",
-      "categoryId": 9,
-      "price": 129,
-      "veg": true,
-      "available": true
-    }
+    { "id": 101, "name": "Classic Margherita", "categoryId": 1, "price": 199, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca" },
+    { "id": 102, "name": "Paneer Tikka Pizza", "categoryId": 1, "price": 299, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e" },
+    { "id": 103, "name": "Cheese Burst Veg Pizza", "categoryId": 1, "price": 349, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1548365328-9f547f6c3f22" },
+    { "id": 104, "name": "Farmhouse Pizza", "categoryId": 1, "price": 279, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212" },
+    { "id": 105, "name": "Mexican Veg Pizza", "categoryId": 1, "price": 289, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94" },
+
+    { "id": 201, "name": "Paneer Overload Pizza", "categoryId": 2, "price": 379, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e" },
+    { "id": 202, "name": "Cheese Lovers Pizza", "categoryId": 2, "price": 399, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1601924582975-7e1b09d65f9c" },
+    { "id": 203, "name": "Tandoori Paneer Pizza", "categoryId": 2, "price": 359, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1604917877934-07d8d248d396" },
+
+    { "id": 301, "name": "Veg Cheese Burger", "categoryId": 3, "price": 129, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1550547660-d9450f859349" },
+    { "id": 302, "name": "Paneer Burger", "categoryId": 3, "price": 149, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1606755962773-d324e7a7a7f3" },
+    { "id": 303, "name": "Aloo Tikki Burger", "categoryId": 3, "price": 99, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1610970878459-a0e464d7592f" },
+
+    { "id": 401, "name": "Paneer Tikka Roll", "categoryId": 4, "price": 149, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1604908176997-431f6bcd1f1b" },
+    { "id": 402, "name": "Veg Frankie Roll", "categoryId": 4, "price": 129, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1628294895950-9805252327bc" },
+    { "id": 403, "name": "Cheese Corn Roll", "categoryId": 4, "price": 139, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd" },
+
+    { "id": 501, "name": "Peri Peri Fries", "categoryId": 5, "price": 129, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d" },
+    { "id": 502, "name": "Cheese Fries", "categoryId": 5, "price": 149, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1598679253544-2c97992403ea" },
+    { "id": 503, "name": "Masala Fries", "categoryId": 5, "price": 119, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877" },
+
+    { "id": 601, "name": "Veg Fried Momos", "categoryId": 6, "price": 149, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1626776876709-5c5b6b8c2f5d" },
+    { "id": 602, "name": "Veg Steam Momos", "categoryId": 6, "price": 129, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84" },
+    { "id": 603, "name": "Paneer Momos", "categoryId": 6, "price": 159, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1626082929543-6a4c8c30b7e3" },
+
+    { "id": 701, "name": "White Sauce Pasta", "categoryId": 7, "price": 199, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a" },
+    { "id": 702, "name": "Red Sauce Pasta", "categoryId": 7, "price": 189, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b" },
+    { "id": 703, "name": "Cheese Pasta", "categoryId": 7, "price": 219, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8" },
+
+    { "id": 801, "name": "Cold Coffee", "categoryId": 8, "price": 99, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1599785209707-a456fc1337bb" },
+    { "id": 802, "name": "Chocolate Shake", "categoryId": 8, "price": 149, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767" },
+    { "id": 803, "name": "Strawberry Shake", "categoryId": 8, "price": 139, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e" },
+
+    { "id": 901, "name": "Choco Lava Cake", "categoryId": 9, "price": 129, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51" },
+    { "id": 902, "name": "Brownie with Ice Cream", "categoryId": 9, "price": 169, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c" },
+    { "id": 903, "name": "Chocolate Pastry", "categoryId": 9, "price": 99, "veg": true, "available": true, "image": "https://images.unsplash.com/photo-1586985289773-42a3f8c8a36b" }
   ],
+
 
   "users": [
     {

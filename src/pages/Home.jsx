@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CategorySlider from "../components/CategorySlider";
+import Hero from "../components/Hero";
 
 const HomePage = () => {
   const [categories, setCategories] = useState([
@@ -52,6 +53,14 @@ const HomePage = () => {
 
   return (
     <div>
+      <Hero>
+        <div className="h-full w-full text-center mt-24">
+          <h1 className="text-5xl font-dancing-script font-semibold">
+            Shree Seva Sadan Restaurant
+          </h1>
+          <p className="mt-2">Pure Veg • Pure Taste • Pure Trust</p>
+        </div>
+      </Hero>
       <section className="max-w-7xl container mx-auto px-5 py-5">
         <h3 className="text-xl font-semibold py-2">Categories</h3>
         <CategorySlider categories={categories} />
